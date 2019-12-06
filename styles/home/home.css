@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: #6e6d6d;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "picture" "footer";
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  padding: 10px 8%;
+}
+
+#home-pic {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: picture;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#home-pic img {
+  width: 330px;
+  height: 580px;
+  -webkit-box-shadow: 0px 5px 5px grey;
+          box-shadow: 0px 5px 5px grey;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer #home-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #6e6d6d;
+  border-radius: 100px;
+}
+
+footer #home-button i {
+  font-size: 1.5em;
+}
+
+footer nav {
+  margin: 1em 0;
+}
+
+footer nav i {
+  margin: 0 0.5em;
+  font-size: 1em;
+}
+/*# sourceMappingURL=home.css.map */
