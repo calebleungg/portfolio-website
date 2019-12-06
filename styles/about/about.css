@@ -118,19 +118,78 @@ footer nav i {
   font-family: "Montserrat", sans-serif;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "picture" "footer";
+      grid-template-areas: "header" "about" "footer";
 }
 
 header {
+  margin: 5%;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
-  padding: 10px 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  -webkit-box-shadow: 2px 3px 5px grey;
+          box-shadow: 2px 3px 5px grey;
+}
+
+#aboutContent {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: about;
+  margin: 5%;
+  font-size: 0.8em;
+}
+
+#aboutContent #summary {
+  margin-bottom: 10px;
+}
+
+#aboutContent #skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+#aboutContent #skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+
+#aboutContent #skills ul li {
+  width: 47%;
+  margin: 5px;
+}
+
+#aboutContent #skills img {
+  width: 20px;
+  height: 20px;
 }
 
 #home-pic {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: picture;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,4 +206,4 @@ header {
           box-shadow: 2px 3px 5px grey;
   border-radius: 0px 30px 0px 30px;
 }
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=about.css.map */

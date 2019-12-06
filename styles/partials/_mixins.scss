@@ -2,3 +2,7 @@
     width: $width;
     height: $height;
 }
+
+@mixin space($margin: 5%) {
+    margin: $margin;
+}
