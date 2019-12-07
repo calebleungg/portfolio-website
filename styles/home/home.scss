@@ -26,7 +26,7 @@ header {
     justify-content: center;
 
     img {
-        @include set-size(330px, 580px);
+        @include set-size(330px, 550px);
         box-shadow: 2px 3px 5px grey;
         border-radius: 0px 30px 0px 30px;
     }

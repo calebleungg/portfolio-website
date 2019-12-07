@@ -37,6 +37,7 @@ footer {
 }
 
 footer #home-button {
+  margin: 0.5em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,12 +113,17 @@ footer #home-button i {
 }
 
 footer nav {
-  margin: 1em 0;
+  margin: 0.5em 0;
 }
 
 footer nav i {
   margin: 0 0.5em;
   font-size: 1em;
+}
+
+footer nav a {
+  text-decoration: none;
+  color: #6e6d6d;
 }
 
 .container {
