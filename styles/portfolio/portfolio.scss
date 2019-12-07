@@ -1,0 +1,51 @@
+@import "../partials/main";
+@import "../partials/footer";
+@import "../partials/fonts";
+@import "../partials/mixins";
+
+.container {
+    height: 100vh;
+    font-family: $p-font;
+    display: grid;
+    grid-template-areas:
+    "portfolio" 
+    "portfolio"
+    "footer"
+    ;
+}
+
+#portfolio {
+    grid-area: portfolio;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolioItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        @include set-size(150px, 150px);
+        background-color: lightgrey;
+        margin: 15px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+        list-style: none;
+        box-shadow: 0px 0px 3px grey;
+
+        img {
+            @include set-size(100%, 100%);
+        }
+
+        &:active {
+            border: 1px solid #6e6d6d;
+        }
+    }
+}
+

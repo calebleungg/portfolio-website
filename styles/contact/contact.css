@@ -16,8 +16,6 @@ body {
 }
 
 footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: footer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,39 +117,4 @@ footer nav i {
   margin: 0 0.5em;
   font-size: 1em;
 }
-
-.container {
-  height: 100vh;
-  font-family: "Montserrat", sans-serif;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "header" "picture" "footer";
-}
-
-header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: header;
-  padding: 10px 8%;
-}
-
-#home-pic {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: picture;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#home-pic img {
-  width: 330px;
-  height: 580px;
-  -webkit-box-shadow: 2px 3px 5px grey;
-          box-shadow: 2px 3px 5px grey;
-  border-radius: 0px 30px 0px 30px;
-}
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=contact.css.map */
