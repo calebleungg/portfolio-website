@@ -6,6 +6,8 @@
 
 body {
   color: #6e6d6d;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f3e6bd));
+  background: linear-gradient(white, #f3e6bd);
 }
 
 .button {
@@ -169,6 +171,7 @@ header img {
   grid-area: about;
   margin: 5%;
   font-size: 0.8em;
+  overflow: scroll;
 }
 
 #aboutContent #summary {
@@ -207,21 +210,16 @@ header img {
   height: 20px;
 }
 
-#home-pic {
-  grid-area: picture;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#aboutContent hr {
+  margin: 10px 0;
 }
 
-#home-pic img {
-  width: 330px;
-  height: 580px;
-  -webkit-box-shadow: 2px 3px 5px grey;
-          box-shadow: 2px 3px 5px grey;
-  border-radius: 0px 30px 0px 30px;
+#aboutContent #interests h3 {
+  margin: 10px 0;
+}
+
+#aboutContent #interests i {
+  font-size: 1.5em;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=about.css.map */

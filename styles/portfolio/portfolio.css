@@ -6,6 +6,8 @@
 
 body {
   color: #6e6d6d;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f3e6bd));
+  background: linear-gradient(white, #f3e6bd);
 }
 
 .button {
