@@ -85,4 +85,20 @@ footer {
         }
     }
 
+    img {
+        width: 20px;
+        height: 20px;
+        align-self: flex-start;
+        animation: ninja-run 4s linear infinite;
+    }
+
+}
+
+@keyframes ninja-run {
+    from {
+        transform: translateX(-50vw);
+    }
+    to {
+        transform: translateX(110vw);
+    }
 }

@@ -133,6 +133,37 @@ footer nav a {
   color: #6e6d6d;
 }
 
+footer img {
+  width: 20px;
+  height: 20px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-animation: ninja-run 4s linear infinite;
+          animation: ninja-run 4s linear infinite;
+}
+
+@-webkit-keyframes ninja-run {
+  from {
+    -webkit-transform: translateX(-50vw);
+            transform: translateX(-50vw);
+  }
+  to {
+    -webkit-transform: translateX(110vw);
+            transform: translateX(110vw);
+  }
+}
+
+@keyframes ninja-run {
+  from {
+    -webkit-transform: translateX(-50vw);
+            transform: translateX(-50vw);
+  }
+  to {
+    -webkit-transform: translateX(110vw);
+            transform: translateX(110vw);
+  }
+}
+
 .container {
   height: 100vh;
   font-family: "Montserrat", sans-serif;

@@ -17,6 +17,7 @@
 header {
     grid-area: header;
     padding: 10px 8%;
+    animation: fly-down 1s;
 
 }
 
@@ -31,6 +32,32 @@ header {
         border-radius: 0px 30px 0px 30px;
     }
 
+}
+
+footer {
+    animation: fly-up 1s;
+}
+
+@keyframes fly-down {
+    from {
+        opacity: 0;
+        transform: translateY(-200px) 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+@keyframes fly-up {
+    from {
+        opacity: 0;
+        transform: translateY(200px) 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
 }
 
 @media screen and (min-width: 760px) {
