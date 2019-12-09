@@ -89,8 +89,8 @@ footer #home-button ul {
   height: 0;
   padding: 0;
   margin: 0;
-  -webkit-transition: width 0.5s, height 0.5s;
-  transition: width 0.5s, height 0.5s;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
