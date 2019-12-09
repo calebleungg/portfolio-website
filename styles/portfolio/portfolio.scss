@@ -111,4 +111,19 @@
 
 }
 
+@media screen and (min-width: 760px) {
+    
+    #portfolioItems {
+        li {
+            @include set-size(240px, 240px);
+        }
+    }
+
+    .modal {
+        width: 500px;
+        font-size: 1.3em;
+    }
+
+}
+
 

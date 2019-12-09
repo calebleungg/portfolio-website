@@ -222,4 +222,10 @@ header img {
   font-size: 1.5em;
   margin-top: 10px;
 }
+
+@media screen and (min-width: 760px) {
+  #aboutContent {
+    font-size: 1em;
+  }
+}
 /*# sourceMappingURL=about.css.map */

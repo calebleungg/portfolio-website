@@ -58,3 +58,24 @@ header {
         color: #6e6d6d;
     }
 }
+
+@media screen and (min-width: 760px) {
+
+    header {
+        img {
+            border-radius: 100px;
+            @include set-size(150px, 150px);
+        }
+    }
+    
+    #resume {
+        font-size: 1.5em;
+        h3 {
+            margin-bottom: 30px;
+        }
+        iframe {
+            @include set-size(600px, 700px);
+        }
+    }
+
+}

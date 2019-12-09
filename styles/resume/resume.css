@@ -209,4 +209,22 @@ header h1 {
 #resume a {
   color: #6e6d6d;
 }
+
+@media screen and (min-width: 760px) {
+  header img {
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+  }
+  #resume {
+    font-size: 1.5em;
+  }
+  #resume h3 {
+    margin-bottom: 30px;
+  }
+  #resume iframe {
+    width: 600px;
+    height: 700px;
+  }
+}
 /*# sourceMappingURL=resume.css.map */
