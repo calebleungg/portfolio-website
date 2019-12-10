@@ -64,6 +64,7 @@ header {
     header {
         img {
             border-radius: 100px;
+            box-shadow: 2px 3px 5px grey;
             @include set-size(150px, 150px);
         }
     }
@@ -78,4 +79,40 @@ header {
         }
     }
 
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .container {
+        grid-template-areas: 
+        "header resume"
+        "footer resume"
+        ;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-end;
+        img {
+            @include set-size(400px, 400px);
+            border-radius: 0;
+        }
+
+        h1 {
+            padding-top: 1.5em;
+        }
+
+        padding-left: 10em;
+    }
+
+    #resume {
+        padding-right: 10em;
+    }
+
+    footer {
+        justify-content: flex-start;
+        padding-left: 10em;
+    }
 }

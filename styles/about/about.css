@@ -133,37 +133,6 @@ footer nav a {
   color: #6e6d6d;
 }
 
-footer img {
-  width: 20px;
-  height: 20px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  -webkit-animation: ninja-run 4s linear infinite;
-          animation: ninja-run 4s linear infinite;
-}
-
-@-webkit-keyframes ninja-run {
-  from {
-    -webkit-transform: translateX(-50vw);
-            transform: translateX(-50vw);
-  }
-  to {
-    -webkit-transform: translateX(110vw);
-            transform: translateX(110vw);
-  }
-}
-
-@keyframes ninja-run {
-  from {
-    -webkit-transform: translateX(-50vw);
-            transform: translateX(-50vw);
-  }
-  to {
-    -webkit-transform: translateX(110vw);
-            transform: translateX(110vw);
-  }
-}
-
 .container {
   height: 100vh;
   font-family: "Montserrat", sans-serif;
@@ -257,6 +226,59 @@ header img {
 @media screen and (min-width: 760px) {
   #aboutContent {
     font-size: 1em;
+    margin: 0 10%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+        grid-template-areas: "header about" "footer about";
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-left: 10em;
+  }
+  header img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+  }
+  #aboutContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: 0.8em;
+    width: 500px;
+    padding-right: 10em;
+  }
+  footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 10em;
   }
 }
 /*# sourceMappingURL=about.css.map */

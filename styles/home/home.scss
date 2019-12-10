@@ -93,6 +93,26 @@ footer {
     }
 }
 
+@media screen and (min-width: 1200px) {
+
+    header {
+        align-items: flex-end;
+    }
+
+    #home-pic {
+        justify-content: flex-start;
+        img {
+            @include set-size(500px, 800px);
+
+        }
+    }
+
+    footer {
+        padding: 0 8%;
+        align-items: flex-end;
+    }
+}
+
 
 
 

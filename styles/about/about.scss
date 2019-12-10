@@ -78,6 +78,46 @@ header {
 @media screen and (min-width: 760px) {
     #aboutContent {
         font-size: 1em;
+        margin: 0 10%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .container {
+        grid-template-areas: 
+        "header about"
+        "footer about"
+        ;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+        img {
+            @include set-size(300px, 300px);
+            border-radius: 100%;
+        }
+        padding-left: 10em;
+    }
+
+    #aboutContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 0.8em;
+        width: 500px;
+        padding-right: 10em;
+    }
+
+    footer {
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 10em;
     }
 }
 
