@@ -179,15 +179,6 @@ header img {
 }
 
 #aboutContent #skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 10px;
 }
 
@@ -210,6 +201,28 @@ header img {
   height: 20px;
 }
 
+#aboutContent #soft-skills {
+  margin-top: 10px;
+}
+
+#aboutContent #soft-skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+
+#aboutContent #soft-skills ul li {
+  width: 47%;
+  margin: 5px;
+}
+
+#aboutContent #soft-skills ul i {
+  font-size: 1.5em;
+}
+
 #aboutContent hr {
   margin: 10px 0;
 }
@@ -225,7 +238,6 @@ header img {
 
 @media screen and (min-width: 760px) {
   #aboutContent {
-    font-size: 1em;
     margin: 0 10%;
   }
 }
@@ -268,8 +280,8 @@ header img {
         -ms-flex-align: start;
             align-items: flex-start;
     font-size: 0.8em;
-    width: 500px;
     padding-right: 10em;
+    margin: 0 10%;
   }
   footer {
     -webkit-box-align: center;

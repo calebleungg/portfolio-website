@@ -39,9 +39,6 @@ header {
     }
 
     #skills {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-top: 10px;
 
         ul {
@@ -57,6 +54,26 @@ header {
         img {
             @include set-size(20px, 20px)
         }
+    }
+
+    #soft-skills {
+        margin-top: 10px;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            li {
+                width: 47%;
+                margin: 5px;
+            }
+
+            i {
+                font-size: 1.5em;
+            }
+        
+        }
+
     }
 
     hr {
@@ -77,7 +94,6 @@ header {
 
 @media screen and (min-width: 760px) {
     #aboutContent {
-        font-size: 1em;
         margin: 0 10%;
     }
 
@@ -110,8 +126,8 @@ header {
         justify-content: center;
         align-items: flex-start;
         font-size: 0.8em;
-        width: 500px;
         padding-right: 10em;
+        margin: 0 10%;
     }
 
     footer {
