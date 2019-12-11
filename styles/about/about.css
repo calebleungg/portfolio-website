@@ -171,6 +171,9 @@ header img {
   grid-area: about;
   margin: 5%;
   font-size: 0.8em;
+}
+
+#aboutContent #wrapper {
   overflow: scroll;
 }
 
@@ -282,6 +285,10 @@ header img {
     font-size: 0.8em;
     padding-right: 10em;
     margin: 0 10%;
+  }
+  #aboutContent #wrapper {
+    width: 600px;
+    height: 700px;
   }
   footer {
     -webkit-box-align: center;

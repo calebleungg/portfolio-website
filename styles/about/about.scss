@@ -32,7 +32,10 @@ header {
     grid-area: about;
     @include space();
     font-size: 0.8em;
-    overflow: scroll;
+
+    #wrapper {
+        overflow: scroll;
+    }
 
     #summary {
         margin-bottom: 10px;
@@ -128,6 +131,11 @@ header {
         font-size: 0.8em;
         padding-right: 10em;
         margin: 0 10%;
+
+        #wrapper {
+            width: 600px;
+            height: 700px;
+        }
     }
 
     footer {
