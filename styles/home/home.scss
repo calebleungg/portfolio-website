@@ -4,7 +4,7 @@
 @import "../partials/mixins";
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     font-family: $p-font;
     display: grid;
     grid-template-areas: 
@@ -102,7 +102,7 @@ footer {
     #home-pic {
         justify-content: flex-start;
         img {
-            @include set-size(500px, 800px);
+            @include set-size(450px, 700px);
 
         }
     }

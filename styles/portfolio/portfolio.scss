@@ -4,11 +4,10 @@
 @import "../partials/mixins";
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     font-family: $p-font;
     display: grid;
     grid-template-areas:
-    "portfolio" 
     "portfolio"
     "footer"
     ;
@@ -72,6 +71,8 @@
 	background: white;
 	width: 300px;
     position: relative;
+    max-height: 70vh;
+    overflow: scroll;
     
     .modal-content {
         max-height: 400px;
@@ -127,7 +128,7 @@
 
 @media screen and (min-width: 1200px) {
     #portfolio {
-        margin: 0 25%;
+        margin: 0 20%;
     }
 
     footer {

@@ -4,7 +4,7 @@
 @import "../partials/mixins";
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     font-family: $p-font;
     display: grid;
     grid-template-areas:
@@ -70,6 +70,10 @@ header {
 }
 
 @media screen and (min-width: 760px) {
+
+    header {
+        @include space($margin: 1%)
+    }
 
     #contact {
         form {

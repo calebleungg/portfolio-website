@@ -6,6 +6,9 @@
 
 body {
   color: #6e6d6d;
+}
+
+.container {
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f3e6bd));
   background: linear-gradient(white, #f3e6bd);
 }
@@ -23,7 +26,7 @@ a {
 }
 
 footer {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: footer;
   display: -webkit-box;
@@ -134,16 +137,15 @@ footer nav a {
 }
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "portfolio"  "portfolio" "footer";
+      grid-template-areas: "portfolio" "footer";
 }
 
 #portfolio {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: portfolio;
   display: -webkit-box;
@@ -217,6 +219,8 @@ footer nav a {
   background: white;
   width: 300px;
   position: relative;
+  max-height: 70vh;
+  overflow: scroll;
 }
 
 .modal .modal-content {
@@ -264,7 +268,7 @@ footer nav a {
 
 @media screen and (min-width: 1200px) {
   #portfolio {
-    margin: 0 25%;
+    margin: 0 20%;
   }
   footer {
     -webkit-box-pack: start;

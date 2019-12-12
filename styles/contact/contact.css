@@ -6,6 +6,9 @@
 
 body {
   color: #6e6d6d;
+}
+
+.container {
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f3e6bd));
   background: linear-gradient(white, #f3e6bd);
 }
@@ -134,7 +137,7 @@ footer nav a {
 }
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   display: -ms-grid;
   display: grid;
@@ -214,6 +217,9 @@ header h1 {
 }
 
 @media screen and (min-width: 760px) {
+  header {
+    margin: 1%;
+  }
   #contact form input {
     width: 400px;
     padding: 15px;
