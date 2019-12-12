@@ -255,7 +255,8 @@ footer nav a {
 }
 
 #portfolioItems li:hover {
-  border: 3px solid #b49402;
+  -webkit-box-shadow: 0 0 10px #b49402;
+          box-shadow: 0 0 10px #b49402;
 }
 
 .overlay {
