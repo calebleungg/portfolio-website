@@ -70,7 +70,29 @@ header {
         }
 
         #submit-button {
-            width: 70%;
+            width: 40%;
+            border-radius: 30px;
+            background-color: $snd-color;
+            color: white;
+
+            &:hover {
+                animation: pulse 1s infinite
+            }
+
+            @keyframes pulse {
+                0% {
+                    width: 40%;
+                    background-color: $snd-color;
+                }
+                50% {
+                    width: 50%;
+                    background-color: rgb(223, 191, 10);
+                }
+                100% {
+                    width: 40%;
+                    background-color: $snd-color;
+                }
+            }
         }
 
     }

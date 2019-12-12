@@ -39,9 +39,11 @@
         }
 
         &:hover {
-            box-shadow: 0 0 10px $snd-color;
+            transform: scale(1.1);
+            box-shadow: 0px 0px 5px $snd-color;
         }
     }
+
 }
 
 .overlay {

@@ -44,6 +44,10 @@ header {
         border-bottom: solid 10px transparent;
         border-left: solid 10px transparent;
         animation: moving-border 8s infinite linear;
+
+        &:hover {
+            animation-duration: 1s;
+        }
     }
     
     @keyframes moving-border {

@@ -202,6 +202,59 @@ footer nav a {
   color: #6e6d6d;
 }
 
+footer nav a:hover i {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-animation: wiggle 0.3s infinite;
+          animation: wiggle 0.3s infinite;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 .container {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
@@ -251,6 +304,11 @@ header #border {
   border-left: solid 10px transparent;
   -webkit-animation: moving-border 8s infinite linear;
           animation: moving-border 8s infinite linear;
+}
+
+header #border:hover {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 @-webkit-keyframes moving-border {
