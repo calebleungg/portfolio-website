@@ -25,6 +25,32 @@ a {
   color: #6e6d6d;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  color: #6e6d6d;
+}
+
+.container {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f3e6bd));
+  background: linear-gradient(white, #f3e6bd);
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: 1px solid #6e6d6d;
+}
+
+a {
+  text-decoration: none;
+  color: #6e6d6d;
+}
+
 footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -46,6 +72,10 @@ footer {
       justify-content: space-around;
 }
 
+footer a:hover {
+  color: #b49402;
+}
+
 footer #home-button {
   margin: 0.5em 0;
   display: -webkit-box;
@@ -63,6 +93,42 @@ footer #home-button {
   min-height: 50px;
   border: 1px solid #6e6d6d;
   border-radius: 100px;
+}
+
+footer #home-button:hover {
+  border-color: #b49402;
+  color: #b49402;
+}
+
+footer #home-button:hover label i {
+  -webkit-animation: spin 0.5s;
+          animation: spin 0.5s;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+footer #home-button a:hover {
+  color: #b49402;
 }
 
 footer #home-button input {

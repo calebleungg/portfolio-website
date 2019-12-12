@@ -43,11 +43,12 @@ header {
 
     iframe {
         border-radius: 10px; 
-        @include set-size(340px, 480px)
+        @include set-size(340px, 480px);
+        border: 2px solid $snd-color;
     }
 
-    #download {
-        @include set-size(100px, 50px)
+    span {
+        color: $snd-color;
     }
 
     h3{
@@ -102,13 +103,13 @@ header {
 
         @keyframes warp {
             0% {
-                border-radius: 0px 300px 0px 300px;
+                border-radius: 10px 300px 10px 300px;
             }
             50% {
-                border-radius: 300px 0px 300px 0px;
+                border-radius: 300px 10px 300px 10px;
             }
             100% {
-                border-radius: 0px 300px 0px 300px;
+                border-radius: 10px 300px 10px 300px;
             }
         }
 

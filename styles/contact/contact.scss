@@ -43,6 +43,10 @@ header {
     align-items: center;
 
     form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         input {
             padding: 10px;
             border: 1px solid #6e6d6d;
@@ -59,6 +63,10 @@ header {
             width: 250px;
             border-radius: 3px;
             font-size: 1em;
+        }
+
+        #submit-button {
+            width: 70%;
         }
 
     }
