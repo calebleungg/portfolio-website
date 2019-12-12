@@ -89,7 +89,6 @@ footer #home-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 50px;
   min-height: 50px;
   border: 1px solid #6e6d6d;
   border-radius: 100px;
@@ -146,6 +145,10 @@ footer #home-button input:not(:checked) ~ label span:last-child {
 footer #home-button input:checked ~ ul {
   width: 300px;
   height: 50px;
+}
+
+footer #home-button label {
+  padding: 10px;
 }
 
 footer #home-button label span {
