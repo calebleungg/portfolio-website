@@ -81,16 +81,16 @@ header {
 
             @keyframes pulse {
                 0% {
-                    width: 40%;
-                    background-color: $snd-color;
+                    box-shadow: 0px 0px 0px goldenrod;
+                    transform: scale(1)
                 }
                 50% {
-                    width: 50%;
-                    background-color: rgb(223, 191, 10);
+                    box-shadow: 0px 0px 10px goldenrod;
+                    transform: scale(1.01)
                 }
                 100% {
-                    width: 40%;
-                    background-color: $snd-color;
+                    box-shadow: 0px 0px 0px goldenrod;
+                    transform: scale(1)
                 }
             }
         }
