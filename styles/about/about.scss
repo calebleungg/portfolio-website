@@ -24,8 +24,38 @@ header {
     img {
         @include set-size(150px, 150px);
         border-radius: 100px;
-        box-shadow: 2px 3px 5px grey;
+        padding: 5px;
     }
+
+    #circle {
+        position: relative;
+        padding: 10px;
+    }
+
+    #border {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 100%;
+        border-top: solid 10px rgb(180, 148, 2);
+        border-right: solid 10px transparent;
+        border-bottom: solid 10px transparent;
+        border-left: solid 10px transparent;
+        animation: moving-border 8s infinite linear;
+    }
+    
+    @keyframes moving-border {
+        from {
+            transform: rotate(0deg);
+        }
+          to {
+            transform: rotate(360deg);
+        }
+
+    }
+       
 }
 
 #aboutContent {
