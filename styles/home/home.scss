@@ -36,8 +36,47 @@ header {
 }
 
 footer {
+    grid-area: footer;
     animation: fly-up 1s;
+}
 
+footer nav {
+
+    a:nth-child(5) {
+        opacity: 0;
+        animation: fade-in 1s forwards;
+        animation-delay: 1s;
+    }
+    a:nth-child(4) {
+        opacity: 0;
+        animation: fade-in 1s forwards;
+        animation-delay: 1.1s;
+    }
+    a:nth-child(3) {
+        opacity: 0;
+        animation: fade-in 1s forwards;
+        animation-delay: 1.2s;
+    }
+    a:nth-child(2) {
+        opacity: 0;
+        animation: fade-in 1s forwards;
+        animation-delay: 1.3s;
+    }
+    a:nth-child(1) {
+        opacity: 0;
+        animation: fade-in 1s forwards;
+        animation-delay: 1.4s;
+    }
+    
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fly-down {

@@ -99,7 +99,7 @@ footer #home-button:hover {
   color: #b49402;
 }
 
-footer #home-button:hover label i {
+footer #home-button label:hover i {
   -webkit-animation: spin 0.5s;
           animation: spin 0.5s;
 }
@@ -330,6 +330,24 @@ footer nav a:hover i {
   cursor: default;
 }
 
+.overlay .close {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  opacity: 0.8;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #666;
+}
+
+.overlay .close:hover {
+  opacity: 1;
+  color: #b49402;
+}
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
@@ -360,6 +378,7 @@ footer nav a:hover i {
 }
 
 .modal img {
+  padding-top: 20px;
   border-radius: 5px;
 }
 

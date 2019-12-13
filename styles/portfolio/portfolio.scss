@@ -59,6 +59,22 @@
         cursor: default;
     }
 
+    .close {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        opacity: 0.8;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #666;
+        &:hover {
+          opacity: 1;
+          color: $snd-color;
+        }
+    }
+
     &:target {
         visibility: visible;
         opacity: 1;
@@ -88,10 +104,10 @@
             margin-top: 10px;
         }
 
-
     }
 
     img {
+        padding-top: 20px;
         border-radius: 5px;
     }
 

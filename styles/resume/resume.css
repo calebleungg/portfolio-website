@@ -99,7 +99,7 @@ footer #home-button:hover {
   color: #b49402;
 }
 
-footer #home-button:hover label i {
+footer #home-button label:hover i {
   -webkit-animation: spin 0.5s;
           animation: spin 0.5s;
 }
@@ -375,8 +375,8 @@ header h1 {
     width: 400px;
     height: 400px;
     border-radius: 0px 300px 0px 300px;
-    -webkit-animation: warp 5s infinite;
-            animation: warp 5s infinite;
+    -webkit-animation: warp 8s infinite;
+            animation: warp 8s infinite;
   }
   @-webkit-keyframes warp {
     0% {

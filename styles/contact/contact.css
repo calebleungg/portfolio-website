@@ -99,7 +99,7 @@ footer #home-button:hover {
   color: #b49402;
 }
 
-footer #home-button:hover label i {
+footer #home-button label:hover i {
   -webkit-animation: spin 0.5s;
           animation: spin 0.5s;
 }
