@@ -20,6 +20,10 @@
     align-items: center;
 }
 
+/* ---------------------------------------------------
+    PROJECT ITEM STYLING
+----------------------------------------------------- */
+
 #portfolioItems {
     display: flex;
     flex-wrap: wrap;
@@ -46,9 +50,17 @@
                 box-shadow: 0px 0px 5px grey;
             }
         }
+
+        i:hover {
+            color: $snd-color;
+        }
     }
 
 }
+
+/* ---------------------------------------------------
+    OVERLAY DARKEN STYLING
+----------------------------------------------------- */
 
 .overlay {
     position: absolute;
@@ -61,12 +73,20 @@
     visibility: hidden;
     opacity: 0;
 
+    /* ---------------------------------------------------
+        CANCEL FEATURE FOR EXITING MODAL
+    ----------------------------------------------------- */
+
     .cancel {
         position: absolute;
         width: 100%;
         height: 100%;
         cursor: default;
     }
+
+    /* ---------------------------------------------------
+        EXIT BUTTON FEATURE FOR EXITING MODAL
+    ----------------------------------------------------- */
 
     .close {
         position: absolute;
@@ -90,6 +110,10 @@
     }
 
 }
+
+/* ---------------------------------------------------
+    MODAL STYLING
+----------------------------------------------------- */
 
 .modal {
     margin: 75px auto;
@@ -138,6 +162,10 @@
 
 }
 
+/* ---------------------------------------------------
+    IPAD RESPONSIVE MEDIA QUERIES
+----------------------------------------------------- */
+
 @media screen and (min-width: 760px) {
     
     #portfolioItems {
@@ -151,6 +179,10 @@
     }
 
 }
+
+/* ---------------------------------------------------
+    DESKTOP RESPONSIVE MEDIA QUERIES
+----------------------------------------------------- */
 
 @media screen and (min-width: 1200px) {
     #portfolio {

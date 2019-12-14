@@ -51,6 +51,9 @@ a {
   color: #6e6d6d;
 }
 
+/* ---------------------------------------------------
+    FOOTER- NAVIGATION MENU AND SOCIAL MEDIA LINKS
+----------------------------------------------------- */
 footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -70,6 +73,12 @@ footer {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  /* ---------------------------------------------------
+        COLLAPSIBLE NAVIGATION MENU COMPONENT STYLING
+    ----------------------------------------------------- */
+  /* ---------------------------------------------------
+        SOCIAL MEDIA LINKS STYLING
+    ----------------------------------------------------- */
 }
 
 footer a:hover {
@@ -296,6 +305,9 @@ header h1 {
   margin-left: 10px;
 }
 
+/* ---------------------------------------------------
+    RESUME IFRAME STYLING
+----------------------------------------------------- */
 #resume {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -334,6 +346,9 @@ header h1 {
   color: #6e6d6d;
 }
 
+/* ---------------------------------------------------
+    IPAD RESPONSIVE MEDIA QUERIES
+----------------------------------------------------- */
 @media screen and (min-width: 760px) {
   header img {
     border-radius: 100px;
@@ -351,10 +366,16 @@ header h1 {
   }
 }
 
+/* ---------------------------------------------------
+    DESKTOP RESPONSIVE MEDIA QUERIES
+----------------------------------------------------- */
 @media screen and (min-width: 1200px) {
   .container {
         grid-template-areas: "header resume" "footer resume";
   }
+  /* ---------------------------------------------------
+        HEADER IMAGE ANIMATION STYLING
+    ----------------------------------------------------- */
   header {
     -ms-grid-row: 1;
     -ms-grid-column: 1;

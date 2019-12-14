@@ -1,5 +1,9 @@
 @import "main";
 
+/* ---------------------------------------------------
+    FOOTER- NAVIGATION MENU AND SOCIAL MEDIA LINKS
+----------------------------------------------------- */
+
 footer {
     grid-area: footer;
     display: flex;
@@ -13,6 +17,9 @@ footer {
         color: $snd-color;
     }
     
+    /* ---------------------------------------------------
+        COLLAPSIBLE NAVIGATION MENU COMPONENT STYLING
+    ----------------------------------------------------- */
 
     #home-button {
         margin: 0.5em 0;
@@ -103,6 +110,10 @@ footer {
         }
 
     }
+
+    /* ---------------------------------------------------
+        SOCIAL MEDIA LINKS STYLING
+    ----------------------------------------------------- */
 
     nav {
         margin: 0.5em 0;

@@ -14,6 +14,9 @@
     ;
 }
 
+/* ---------------------------------------------------
+    SPLASH PAGE HEADER ANIMATION STYLING
+----------------------------------------------------- */
 
 header {
     grid-area: header;
@@ -21,6 +24,10 @@ header {
     animation: fly-down 1s;
 
 }
+
+/* ---------------------------------------------------
+    SPLASH PAGE PICTURE STYLING
+----------------------------------------------------- */
 
 #home-pic {
     grid-area: picture;
@@ -34,6 +41,10 @@ header {
     }
 
 }
+
+/* ---------------------------------------------------
+    SPLASH PAGE SOCIAL LINKS ANIMATION
+----------------------------------------------------- */
 
 footer {
     grid-area: footer;
@@ -101,6 +112,10 @@ footer nav {
     }
 }
 
+/* ---------------------------------------------------
+    IPAD RESPONSIVE MEDIA QUERIES
+----------------------------------------------------- */
+
 @media screen and (min-width: 760px) {
     .container {
         grid-template-areas: 
@@ -136,6 +151,10 @@ footer nav {
         }
     }
 }
+
+/* ---------------------------------------------------
+    DESKTOP RESPONSIVE MEDIA QUERIES
+----------------------------------------------------- */
 
 @media screen and (min-width: 1200px) {
 

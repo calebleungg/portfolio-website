@@ -51,6 +51,9 @@ a {
   color: #6e6d6d;
 }
 
+/* ---------------------------------------------------
+    FOOTER- NAVIGATION MENU AND SOCIAL MEDIA LINKS
+----------------------------------------------------- */
 footer {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -70,6 +73,12 @@ footer {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  /* ---------------------------------------------------
+        COLLAPSIBLE NAVIGATION MENU COMPONENT STYLING
+    ----------------------------------------------------- */
+  /* ---------------------------------------------------
+        SOCIAL MEDIA LINKS STYLING
+    ----------------------------------------------------- */
 }
 
 footer a:hover {
@@ -281,6 +290,9 @@ footer nav a:hover i {
           align-items: center;
 }
 
+/* ---------------------------------------------------
+    PROJECT ITEM STYLING
+----------------------------------------------------- */
 #portfolioItems {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,6 +331,13 @@ footer nav a:hover i {
           box-shadow: 0px 0px 5px grey;
 }
 
+#portfolioItems li i:hover {
+  color: #b49402;
+}
+
+/* ---------------------------------------------------
+    OVERLAY DARKEN STYLING
+----------------------------------------------------- */
 .overlay {
   position: absolute;
   top: 0;
@@ -330,6 +349,12 @@ footer nav a:hover i {
   transition: opacity 200ms;
   visibility: hidden;
   opacity: 0;
+  /* ---------------------------------------------------
+        CANCEL FEATURE FOR EXITING MODAL
+    ----------------------------------------------------- */
+  /* ---------------------------------------------------
+        EXIT BUTTON FEATURE FOR EXITING MODAL
+    ----------------------------------------------------- */
 }
 
 .overlay .cancel {
@@ -362,6 +387,9 @@ footer nav a:hover i {
   opacity: 1;
 }
 
+/* ---------------------------------------------------
+    MODAL STYLING
+----------------------------------------------------- */
 .modal {
   margin: 75px auto;
   padding: 20px;
@@ -406,6 +434,9 @@ footer nav a:hover i {
   margin: 20px 0;
 }
 
+/* ---------------------------------------------------
+    IPAD RESPONSIVE MEDIA QUERIES
+----------------------------------------------------- */
 @media screen and (min-width: 760px) {
   #portfolioItems li {
     width: 240px;
@@ -416,6 +447,9 @@ footer nav a:hover i {
   }
 }
 
+/* ---------------------------------------------------
+    DESKTOP RESPONSIVE MEDIA QUERIES
+----------------------------------------------------- */
 @media screen and (min-width: 1200px) {
   #portfolio {
     margin: 0 20%;

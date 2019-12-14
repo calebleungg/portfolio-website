@@ -51,6 +51,9 @@ a {
   color: #6e6d6d;
 }
 
+/* ---------------------------------------------------
+    FOOTER- NAVIGATION MENU AND SOCIAL MEDIA LINKS
+----------------------------------------------------- */
 footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -70,6 +73,12 @@ footer {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  /* ---------------------------------------------------
+        COLLAPSIBLE NAVIGATION MENU COMPONENT STYLING
+    ----------------------------------------------------- */
+  /* ---------------------------------------------------
+        SOCIAL MEDIA LINKS STYLING
+    ----------------------------------------------------- */
 }
 
 footer a:hover {
@@ -266,6 +275,9 @@ footer nav a:hover i {
       grid-template-areas: "header" "about" "footer";
 }
 
+/* ---------------------------------------------------
+    IMAGE ROTATING BORDER STYLING
+----------------------------------------------------- */
 header {
   margin: 5%;
   -ms-grid-row: 1;
@@ -280,6 +292,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* ---------------------------------------------------
+        SPINNING BORDER ANIMATION
+    ----------------------------------------------------- */
 }
 
 header img {
@@ -336,21 +351,28 @@ header #border:hover {
   }
 }
 
+/* ---------------------------------------------------
+    ABOUT CONTENT SECTION STYLING
+----------------------------------------------------- */
 #aboutContent {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: about;
   font-size: 0.8em;
+}
+
+#aboutContent #wrapper {
   border-radius: 20px;
   background-color: #fafafa;
   -webkit-box-shadow: 1px 1px 5px lightgrey;
           box-shadow: 1px 1px 5px lightgrey;
+  height: 50vh;
+  overflow: scroll;
+  padding: 20px;
 }
 
-#aboutContent #wrapper {
-  margin: 5%;
-  height: 55vh;
-  overflow: scroll;
+#aboutContent #wrapper li {
+  list-style: none;
 }
 
 #aboutContent #summary {
@@ -371,7 +393,7 @@ header #border:hover {
 }
 
 #aboutContent #skills ul li {
-  width: 47%;
+  width: 45%;
   margin: 5px;
 }
 
@@ -394,7 +416,7 @@ header #border:hover {
 }
 
 #aboutContent #soft-skills ul li {
-  width: 47%;
+  width: 45%;
   margin: 5px;
 }
 
@@ -415,15 +437,26 @@ header #border:hover {
   color: #b49402;
 }
 
+/* ---------------------------------------------------
+    IPAD RESPONSIVE MEDIA QUERIES
+----------------------------------------------------- */
 @media screen and (min-width: 760px) {
   #aboutContent {
     margin: 0 10%;
   }
 }
 
+/* ---------------------------------------------------
+    DESKTOP RESPONSIVE MEDIA QUERIES
+----------------------------------------------------- */
 @media screen and (min-width: 1200px) {
+  body {
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f3e6bd));
+    background: linear-gradient(white, #f3e6bd);
+  }
   .container {
         grid-template-areas: "header about" "footer about";
+    margin: 0 10em;
   }
   header {
     -ms-grid-row: 1;
@@ -440,7 +473,6 @@ header #border:hover {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    padding-left: 10em;
   }
   header img {
     width: 300px;
@@ -466,11 +498,11 @@ header #border:hover {
         -ms-flex-align: start;
             align-items: flex-start;
     font-size: 0.8em;
-    margin: 0 10%;
   }
   #aboutContent #wrapper {
     width: 600px;
     height: 700px;
+    padding: 30px;
   }
   footer {
     -ms-grid-row: 2;
@@ -482,7 +514,6 @@ header #border:hover {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-left: 10em;
   }
 }
 /*# sourceMappingURL=about.css.map */

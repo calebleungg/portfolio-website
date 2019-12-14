@@ -14,6 +14,10 @@
     ;
 }
 
+/* ---------------------------------------------------
+    IMAGE ROTATING BORDER STYLING
+----------------------------------------------------- */
+
 header {
     @include space();
     grid-area: header;
@@ -26,6 +30,10 @@ header {
         border-radius: 100px;
         padding: 5px;
     }
+
+    /* ---------------------------------------------------
+        SPINNING BORDER ANIMATION
+    ----------------------------------------------------- */
 
     #circle {
         position: relative;
@@ -62,18 +70,26 @@ header {
        
 }
 
+/* ---------------------------------------------------
+    ABOUT CONTENT SECTION STYLING
+----------------------------------------------------- */
+
 #aboutContent {
     grid-area: about;
     font-size: 0.8em;
 
-    border-radius: 20px;
-    background-color: #fafafa;
-    box-shadow: 1px 1px 5px lightgrey;
-
+    
     #wrapper {
-        @include space();
-        height: 55vh;
+        border-radius: 20px;
+        background-color: #fafafa;
+        box-shadow: 1px 1px 5px lightgrey;
+        height: 50vh;
         overflow: scroll;
+        padding: 20px;
+
+        li {
+            list-style: none;
+        }
     }
 
     #summary {
@@ -88,7 +104,7 @@ header {
             flex-wrap: wrap;
             list-style: none;
             li {
-                width: 47%;
+                width: 45%;
                 margin: 5px;
             }
         
@@ -106,7 +122,7 @@ header {
             flex-wrap: wrap;
             list-style: none;
             li {
-                width: 47%;
+                width: 45%;
                 margin: 5px;
             }
 
@@ -119,7 +135,7 @@ header {
     }
 
     hr {
-        margin: 10px 0 ;
+        margin: 10px 0;
     }
 
     #interests {
@@ -135,6 +151,10 @@ header {
 
 }
 
+/* ---------------------------------------------------
+    IPAD RESPONSIVE MEDIA QUERIES
+----------------------------------------------------- */
+
 @media screen and (min-width: 760px) {
     #aboutContent {
         margin: 0 10%;
@@ -142,13 +162,22 @@ header {
 
 }
 
+/* ---------------------------------------------------
+    DESKTOP RESPONSIVE MEDIA QUERIES
+----------------------------------------------------- */
+
 @media screen and (min-width: 1200px) {
+
+    body {
+        background: linear-gradient(white,rgb(243, 230, 189));
+    }
 
     .container {
         grid-template-areas: 
         "header about"
         "footer about"
         ;
+        margin: 0 10em;
     }
 
     header {
@@ -161,7 +190,6 @@ header {
             @include set-size(300px, 300px);
             border-radius: 100%;
         }
-        padding-left: 10em;
     }
 
     #aboutContent {
@@ -175,6 +203,7 @@ header {
         #wrapper {
             width: 600px;
             height: 700px;
+            padding: 30px;
         }
     }
 
@@ -182,7 +211,6 @@ header {
         grid-area: footer;
         align-items: center;
         justify-content: flex-start;
-        padding-left: 10em;
     }
 }
 

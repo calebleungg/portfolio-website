@@ -51,6 +51,9 @@ a {
   color: #6e6d6d;
 }
 
+/* ---------------------------------------------------
+    FOOTER- NAVIGATION MENU AND SOCIAL MEDIA LINKS
+----------------------------------------------------- */
 footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -70,6 +73,12 @@ footer {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  /* ---------------------------------------------------
+        COLLAPSIBLE NAVIGATION MENU COMPONENT STYLING
+    ----------------------------------------------------- */
+  /* ---------------------------------------------------
+        SOCIAL MEDIA LINKS STYLING
+    ----------------------------------------------------- */
 }
 
 footer a:hover {
@@ -266,6 +275,9 @@ footer nav a:hover i {
       grid-template-areas: "header" "picture" "footer";
 }
 
+/* ---------------------------------------------------
+    SPLASH PAGE HEADER ANIMATION STYLING
+----------------------------------------------------- */
 header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -275,6 +287,9 @@ header {
           animation: fly-down 1s;
 }
 
+/* ---------------------------------------------------
+    SPLASH PAGE PICTURE STYLING
+----------------------------------------------------- */
 #home-pic {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -295,6 +310,9 @@ header {
   border-radius: 0px 30px 0px 30px;
 }
 
+/* ---------------------------------------------------
+    SPLASH PAGE SOCIAL LINKS ANIMATION
+----------------------------------------------------- */
 footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -413,6 +431,9 @@ footer nav a:nth-child(1) {
   }
 }
 
+/* ---------------------------------------------------
+    IPAD RESPONSIVE MEDIA QUERIES
+----------------------------------------------------- */
 @media screen and (min-width: 760px) {
   .container {
         grid-template-areas: "header picture" "footer picture";
@@ -463,6 +484,9 @@ footer nav a:nth-child(1) {
   }
 }
 
+/* ---------------------------------------------------
+    DESKTOP RESPONSIVE MEDIA QUERIES
+----------------------------------------------------- */
 @media screen and (min-width: 1200px) {
   header {
     -webkit-box-align: end;

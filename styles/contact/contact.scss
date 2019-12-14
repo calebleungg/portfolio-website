@@ -14,6 +14,10 @@
     ;
 }
 
+/* ---------------------------------------------------
+    CONTACT DESCRIPTION STYLING
+----------------------------------------------------- */
+
 header {
     grid-area: header;
     @include space();
@@ -38,6 +42,10 @@ header {
         color: $snd-color;
     }
 }
+
+/* ---------------------------------------------------
+    CONTACT FORM STYLING
+----------------------------------------------------- */
 
 #contact {
     grid-area: contact;
@@ -68,6 +76,10 @@ header {
             border-radius: 3px;
             font-size: 1em;
         }
+
+        /* ---------------------------------------------------
+            SUBMIT BUTTON STYLING / HOVER EFFECTS
+        ----------------------------------------------------- */
 
         #submit-button {
             width: 40%;
@@ -102,6 +114,10 @@ header {
     }
 
 }
+
+/* ---------------------------------------------------
+    IPAD / DESKTOP MEDIA QUERIES
+----------------------------------------------------- */
 
 @media screen and (min-width: 760px) {
 
