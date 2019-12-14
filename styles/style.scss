@@ -536,9 +536,8 @@
 
 @media screen and (min-width: 760px) {
 
-    /* ------------
-        INDEX
-    ------------- */
+    // INDEX
+
     .home {
         grid-template-areas: 
         "headerHome pictureHome"
@@ -573,17 +572,13 @@
         }
     }
 
-    /* ------------
-        ABOUT ME
-    ------------- */
+    // ABOUT ME
 
     #aboutContent {
         margin: 0 10%;
     }
 
-    /* ------------
-        PORTFOLIO
-    ------------- */
+    // PORTFOLIO
 
     #portfolioItems {
         li {
@@ -595,9 +590,7 @@
         width: 500px;
     }
 
-    /* ------------
-        RESUME
-    ------------- */
+    // RESUME
 
     #header-resume {
         img {
@@ -616,9 +609,7 @@
         }
     }
 
-    /* ------------
-        CONTACT
-    ------------- */
+    // CONTACT
 
     #header-contact {
         @include space($margin: 1%)
@@ -645,9 +636,7 @@
 
 @media screen and (min-width: 1200px) {
 
-    /* ------------
-        INDEX
-    ------------- */
+    // INDEX
 
     #header-home {
         align-items: flex-end;
@@ -666,9 +655,7 @@
         align-items: flex-end;
     }
 
-    /* ------------
-        ABOUT
-    ------------- */
+    // ABOUT
 
     .about {
         grid-template-areas: 
@@ -707,9 +694,7 @@
         justify-content: flex-start;
     }
 
-    /* ------------
-        PORTFOLIO
-    ------------- */
+    // PORTFOLIO
 
     #portfolio {
         margin: 0 20%;
@@ -723,9 +708,7 @@
         font-size: 1em;
     }
 
-    /* ------------
-        RESUME
-    ------------- */
+    // RESUME
 
     .resumePage {
         grid-template-areas: 
