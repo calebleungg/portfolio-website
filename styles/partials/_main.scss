@@ -1,3 +1,5 @@
+@import "fonts";
+
 $snd-color: rgb(180, 148, 2);
 
 * {
@@ -7,13 +9,18 @@ $snd-color: rgb(180, 148, 2);
 
 body {
     color: #6e6d6d;
-}
-
-.container {
     background: linear-gradient(white,rgb(243, 230, 189));
 }
 
-
+.container {
+    display: grid;
+    font-family: $p-font;
+    min-height: 100vh;
+    
+    ul {
+        list-style: none;
+    }
+}
 
 .button {
     width: 50px;

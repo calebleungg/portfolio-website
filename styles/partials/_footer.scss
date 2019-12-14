@@ -1,11 +1,11 @@
 @import "main";
+@import "animations";
 
 /* ---------------------------------------------------
     FOOTER- NAVIGATION MENU AND SOCIAL MEDIA LINKS
 ----------------------------------------------------- */
 
 footer {
-    grid-area: footer;
     display: flex;
     height: 100%;
     flex-wrap: wrap;
@@ -43,14 +43,6 @@ footer {
             }
         }
 
-        @keyframes spin {
-            from {
-                transform: rotate(0deg)
-            }
-            to {
-                transform: rotate(360deg)
-            }
-        }
 
         a:hover {
             color: $snd-color;
@@ -127,29 +119,9 @@ footer {
             color: #6e6d6d;
             &:hover {
                 i {
-                    transform: scale(2);
                     animation: wiggle 0.3s infinite;
 
                 }
-            }
-        }
-
-        @keyframes wiggle {
-            0% {
-                transform: rotate(0deg);
-            }
-            25% {
-                transform: rotate(20deg);
-            }
-
-            50% {
-                transform: rotate(0deg);
-            }
-            75% {
-                transform: rotate(-20deg);
-            }
-            100% {
-                transform: rotate(0deg);
             }
         }
 
