@@ -304,6 +304,9 @@ header a:hover {
 }
 
 #contact {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: contact;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

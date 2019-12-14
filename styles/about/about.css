@@ -340,11 +340,15 @@ header #border:hover {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: about;
-  margin: 5%;
   font-size: 0.8em;
+  border-radius: 20px;
+  background-color: #fafafa;
+  -webkit-box-shadow: 1px 1px 5px lightgrey;
+          box-shadow: 1px 1px 5px lightgrey;
 }
 
 #aboutContent #wrapper {
+  margin: 5%;
   height: 55vh;
   overflow: scroll;
 }
@@ -422,6 +426,9 @@ header #border:hover {
         grid-template-areas: "header about" "footer about";
   }
   header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -441,6 +448,10 @@ header #border:hover {
     border-radius: 100%;
   }
   #aboutContent {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: about;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -455,7 +466,6 @@ header #border:hover {
         -ms-flex-align: start;
             align-items: flex-start;
     font-size: 0.8em;
-    padding-right: 10em;
     margin: 0 10%;
   }
   #aboutContent #wrapper {
@@ -463,6 +473,9 @@ header #border:hover {
     height: 700px;
   }
   footer {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: footer;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

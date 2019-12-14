@@ -64,10 +64,14 @@ header {
 
 #aboutContent {
     grid-area: about;
-    @include space();
     font-size: 0.8em;
 
+    border-radius: 20px;
+    background-color: #fafafa;
+    box-shadow: 1px 1px 5px lightgrey;
+
     #wrapper {
+        @include space();
         height: 55vh;
         overflow: scroll;
     }
@@ -148,6 +152,7 @@ header {
     }
 
     header {
+        grid-area: header;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -160,13 +165,12 @@ header {
     }
 
     #aboutContent {
+        grid-area: about;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         font-size: 0.8em;
-        padding-right: 10em;
-        margin: 0 10%;
 
         #wrapper {
             width: 600px;
@@ -175,6 +179,7 @@ header {
     }
 
     footer {
+        grid-area: footer;
         align-items: center;
         justify-content: flex-start;
         padding-left: 10em;

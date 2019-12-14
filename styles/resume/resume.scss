@@ -42,9 +42,8 @@ header {
     align-items: center;
 
     iframe {
-        border-radius: 10px; 
+        border-radius: 20px; 
         @include set-size(340px, 480px);
-        border: 2px solid $snd-color;
     }
 
     span {
@@ -91,6 +90,7 @@ header {
     }
 
     header {
+        grid-area: header;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -121,6 +121,7 @@ header {
     }
 
     #resume {
+        grid-area: resume;
         padding-right: 10em;
         iframe {
             height: 80vh;
@@ -128,6 +129,7 @@ header {
     }
 
     footer {
+        grid-area: footer;
         justify-content: flex-start;
         padding-left: 10em;
     }
