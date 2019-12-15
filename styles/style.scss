@@ -11,8 +11,8 @@
 .home {
     grid-template-areas: 
     "headerHome"
-    "pictureHome"
     "footerHome"
+    "pictureHome"
     ;
 }
 
@@ -33,9 +33,9 @@
     justify-content: center;
 
     img {
-        @include set-size(330px, 550px);
+        @include set-size(300px, 550px);
         box-shadow: 2px 3px 5px grey;
-        border-radius: 0px 30px 0px 30px;
+        border-radius: 30px;
     }
 
 }
@@ -45,6 +45,7 @@
 #footer-home {
     grid-area: footerHome;
     animation: fly-up 1s;
+    flex-direction: column-reverse;
 }
 
 #footer-home nav {
@@ -84,8 +85,8 @@
 .about {
     grid-template-areas: 
     "headerAbout"
-    "contentAbout"
     "footerAbout"
+    "contentAbout"
     ;
 }
 
@@ -204,6 +205,7 @@
 
 #footer-about {
     grid-area: footerAbout;
+    flex-direction: column-reverse;
 }
 
 /* ------------------------------------------------------------------------------------------------------
@@ -212,8 +214,8 @@
 
 .portfolioPage {
     grid-template-areas:
-    "portfolio"
     "footerPortfolio"
+    "portfolio"
     ;
 }
 
@@ -224,6 +226,7 @@
 
 #footer-portfolio {
     grid-area: footerPortfolio;
+    flex-direction: column-reverse;
 }
 
 // project item styling
@@ -362,8 +365,8 @@
 .resumePage {
     grid-template-areas:
     "headerResume" 
-    "resume"
     "footerResume"
+    "resume"
     ;
 }
 
@@ -412,6 +415,7 @@
 
 #footer-resume {
     grid-area: footerResume;
+    flex-direction: column-reverse;
 }
 
 
@@ -422,8 +426,8 @@
 .contactPage {
     grid-template-areas:
     "headerContact" 
-    "contact"
     "footerContact"
+    "contact"
     ;
 }
 
@@ -570,6 +574,7 @@
         nav {
             font-size: 1.5em;
         }
+        flex-direction: column;
     }
 
     // ABOUT ME
@@ -692,9 +697,17 @@
         grid-area: footer;
         align-items: center;
         justify-content: flex-start;
+        flex-direction: column;
     }
 
     // PORTFOLIO
+
+    .portfolioPage {
+        grid-template-areas: 
+        "portfolio"
+        "footerPortfolio"
+        ;
+    }
 
     #portfolio {
         margin: 0 20%;
@@ -708,6 +721,10 @@
         font-size: 1em;
     }
 
+    #footer-portfolio {
+        flex-direction: column;
+    }
+
     // RESUME
 
     .resumePage {
@@ -715,6 +732,10 @@
         "headerResume resume"
         "footerResume resume"
         ;
+    }
+
+    #footer-resume {
+        flex-direction: column;
     }
 
     // header image animation styling
@@ -750,5 +771,13 @@
         grid-area: footerResume;
         justify-content: flex-start;
         padding-left: 10em;
+    }
+
+    .contactPage {
+        grid-template-areas:
+        "headerContact" 
+        "contact"
+        "footerContact"
+        ;
     }
 }
