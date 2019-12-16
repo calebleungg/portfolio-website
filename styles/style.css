@@ -971,7 +971,7 @@ footer nav a:hover i {
   height: 80px;
   -webkit-box-shadow: 0px 0px 3px grey;
           box-shadow: 0px 0px 3px grey;
-  border-radius: 0px 50px 0px 50px;
+  border-radius: 20px 50px 20px 50px;
 }
 
 #header-resume h1 {
@@ -1093,9 +1093,9 @@ footer nav a:hover i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1110,9 +1110,9 @@ footer nav a:hover i {
   margin: 10px 0;
   width: 250px;
   font-size: 1em;
-  border: none;
   background: transparent;
-  border-bottom: solid #b49402 1px;
+  border: solid #b49402 1px;
+  border-radius: 10px;
   opacity: 0.8;
   outline-width: 0;
 }
@@ -1130,9 +1130,9 @@ footer nav a:hover i {
   width: 250px;
   border-radius: 3px;
   font-size: 1em;
-  border: none;
   background: transparent;
   border: solid #b49402 1px;
+  border-radius: 10px;
   opacity: 0.8;
   outline-width: 0;
 }
@@ -1353,9 +1353,15 @@ footer nav a:hover i {
         grid-template-areas: "portfolio" "footerPortfolio";
   }
   #portfolio {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: portfolio;
     margin: 0 20%;
   }
   #footer-portfolio {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: footerPortfolio;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1427,6 +1433,21 @@ footer nav a:hover i {
   }
   .contactPage {
         grid-template-areas: "headerContact"  "contact" "footerContact";
+  }
+  #header-contact {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: headerContact;
+  }
+  #contact {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: contact;
+  }
+  #footer-contact {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: footerContact;
   }
 }
 /*# sourceMappingURL=style.css.map */

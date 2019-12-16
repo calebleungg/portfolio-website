@@ -22,7 +22,6 @@
     grid-area: headerHome;
     padding: 10px 8%;
     animation: fly-down 1s;
-
 }
 
 // splash page picture styling
@@ -37,7 +36,6 @@
         box-shadow: 2px 3px 5px grey;
         border-radius: 30px;
     }
-
 }
 
 // splash page social links animation
@@ -126,9 +124,7 @@
         &:hover {
             animation-duration: 1s;
         }
-    }
-    
-       
+    }   
 }
 
 // about content section styling
@@ -136,7 +132,6 @@
 #aboutContent {
     grid-area: contentAbout;
     font-size: 0.8em;
-
     
     #wrapper {
         border-radius: 20px;
@@ -161,8 +156,8 @@
                 width: 45%;
                 margin: 5px;
             }
-        
         }
+
         img {
             @include set-size(20px, 20px)
         }
@@ -181,9 +176,7 @@
             i {
                 font-size: 1.5em;
             }
-        
         }
-
     }
 
     hr {
@@ -279,8 +272,7 @@
 
     .cancel {
         position: absolute;
-        width: 100%;
-        height: 100%;
+        @include set-size(100%, 100%);
         cursor: default;
     }
 
@@ -332,7 +324,6 @@
         h5 {
             margin-top: 10px;
         }
-
     }
 
     img {
@@ -379,7 +370,7 @@
     img {
         @include set-size(80px, 80px);
         box-shadow: 0px 0px 3px grey;
-        border-radius: 0px 50px 0px 50px;
+        border-radius: 20px 50px 20px 50px;
     }
 
     h1 {
@@ -465,17 +456,19 @@
     flex-direction: column;
 
     form {
-        @include flex-center();
+        @include flex-center($justify-content: flex-start);
         flex-direction: column;
+
         input {
             padding: 10px;
             margin: 10px 0;
             width: 250px;
             font-size: 1em;
 
-            border: none;
+            // border: none;
             background: transparent;
-            border-bottom: solid $snd-color 1px;
+            border: solid $snd-color 1px;
+            border-radius: 10px;
             opacity: 0.8;
             outline-width: 0;
 
@@ -493,9 +486,10 @@
             border-radius: 3px;
             font-size: 1em;
 
-            border: none;
+            // border: none;
             background: transparent;
             border: solid $snd-color 1px;
+            border-radius: 10px;
             opacity: 0.8;
             outline-width: 0;
 
@@ -506,7 +500,7 @@
             }
         }
 
-        // submit buttong styling / hover effects
+        // submit button styling / hover effects
 
         #submit-button {
             width: 40%;
@@ -687,8 +681,7 @@
         font-size: 0.8em;
 
         #wrapper {
-            width: 600px;
-            height: 700px;
+            @include set-size(600px, 700px);
             padding: 30px;
         }
     }
@@ -710,10 +703,12 @@
     }
 
     #portfolio {
+        grid-area: portfolio;
         margin: 0 20%;
     }
 
     #footer-portfolio {
+        grid-area: footerPortfolio;
         justify-content: flex-start;
     }
 
@@ -773,11 +768,25 @@
         padding-left: 10em;
     }
 
+    // CONTACT
+
     .contactPage {
         grid-template-areas:
         "headerContact" 
         "contact"
         "footerContact"
         ;
+    }
+
+    #header-contact {
+        grid-area: headerContact;
+    }
+
+    #contact {
+        grid-area: contact;
+    }
+
+    #footer-contact {
+        grid-area: footerContact;
     }
 }
