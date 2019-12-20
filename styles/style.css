@@ -1279,7 +1279,7 @@ footer nav a:hover i {
     height: 700px;
   }
   #footer-home {
-    padding: 0 8%;
+    padding: 0 55px;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
