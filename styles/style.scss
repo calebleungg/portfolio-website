@@ -328,7 +328,6 @@
 
     img {
         padding-top: 20px;
-        border-radius: 5px;
     }
 
     h3 {
@@ -387,7 +386,6 @@
     flex-direction: column;
 
     iframe {
-        border-radius: 20px; 
         @include set-size(340px, 480px);
     }
 
@@ -644,6 +642,7 @@
     #home-pic {
         justify-content: flex-start;
         img {
+            border-radius: 20px;
             @include set-size(450px, 700px);
 
         }
@@ -743,8 +742,8 @@
 
         img {
             @include set-size(400px, 400px);
-            border-radius: 0px 300px 0px 300px;
-            animation: warp 8s infinite;
+            border-radius: 250px 0 250px 0;
+            // animation: warp 8s infinite;
         }
 
         h1 {
@@ -758,6 +757,7 @@
         grid-area: resume;
         padding-right: 10em;
         iframe {
+            border-radius: 20px;
             height: 80vh;
         }
     }

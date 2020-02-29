@@ -923,7 +923,6 @@ footer nav a:hover i {
 
 .modal img {
   padding-top: 20px;
-  border-radius: 5px;
 }
 
 .modal h3 {
@@ -999,7 +998,6 @@ footer nav a:hover i {
 }
 
 #resume iframe {
-  border-radius: 20px;
   width: 340px;
   height: 480px;
 }
@@ -1275,6 +1273,7 @@ footer nav a:hover i {
             justify-content: flex-start;
   }
   #home-pic img {
+    border-radius: 20px;
     width: 450px;
     height: 700px;
   }
@@ -1405,9 +1404,7 @@ footer nav a:hover i {
   #header-resume img {
     width: 400px;
     height: 400px;
-    border-radius: 0px 300px 0px 300px;
-    -webkit-animation: warp 8s infinite;
-            animation: warp 8s infinite;
+    border-radius: 250px 0 250px 0;
   }
   #header-resume h1 {
     padding-top: 1.5em;
@@ -1420,6 +1417,7 @@ footer nav a:hover i {
     padding-right: 10em;
   }
   #resume iframe {
+    border-radius: 20px;
     height: 80vh;
   }
   #footer-resume {
